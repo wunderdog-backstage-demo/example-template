@@ -31,10 +31,10 @@ spec:
           title: Repository Location
           type: string
           description: test123
-          # ui:field: RepoUrlPicker
-          # ui:options:
-          #   allowedHosts:
-          #     - github.com
+          ui:field: RepoUrlPicker
+          ui:options:
+            allowedHosts:
+              - github.com
 
   # These steps are executed in the scaffolder backend, using data that we gathered
   # via the parameters above.
@@ -53,7 +53,7 @@ spec:
       name: Publish
       action: publish:github
       input:
-        allowedHosts: ['gitea:3000']
+        allowedHosts: ['github.com']
         description: This is ${{ parameters.name }}
         repoUrl: ${{ parameters.repoUrl }}
 
