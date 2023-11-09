@@ -33,6 +33,8 @@ spec:
           description: test123
           ui:field: RepoUrlPicker
           ui:options:
+            allowedOwners:
+              - wunderdog-backstage-demo
             allowedHosts:
               - github.com
 
