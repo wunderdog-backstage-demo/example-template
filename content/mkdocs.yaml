@@ -1,0 +1,8 @@
+site_name: ${{ values.name }} Docs
+
+nav:
+  - Home: index.md
+  - FAQ: faq.md
+
+plugins:
+  - techdocs-core
